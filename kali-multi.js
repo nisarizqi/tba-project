@@ -24,7 +24,7 @@ function initializeTape() {
 const machine = {
   tapes: ["", "",""],
   initialState: "q0",
-  finalState: ["q10", "q12","q14"],
+  finalState: ["q10", "q12","q13"],
   transitions: [
       //STATE q0
       {
@@ -174,10 +174,10 @@ const machine = {
       },
       {
           currentState: "q6",
-          currentSymbols: ["1", "B","B"],
+          currentSymbols: ["1", "1","B"],
           newState: "q13",
-          newSymbols: ["B", "B","B"],
-          moves: ["right", "stop","stop"]
+          newSymbols: ["B", "B","1"],
+          moves: ["right", "stop","right"]
       },
       
     //state 7
@@ -289,27 +289,69 @@ moves: ["right", "stop","stop"]
 },
 
 //state 13
-{
-currentState: "q13",
-currentSymbols: ["0", "B","B"],
-newState: "q13",
-newSymbols: ["B", "B","B"],
-moves: ["right", "stop","stop"]
-},
-{
-currentState: "q13",
-currentSymbols: ["B", "B","B"],
-newState: "q13",
-newSymbols: ["B", "B","B"],
-moves: ["right", "stop","stop"]
-},
-{
-currentState: "q13",
-currentSymbols: ["1", "B","B"],
-newState: "q14",
-newSymbols: ["B", "B","B"],
-moves: ["right", "stop","stop"]
-},
+// {
+// currentState: "q13",
+// currentSymbols: ["0", "B","B"],
+// newState: "q13",
+// newSymbols: ["B", "B","B"],
+// moves: ["right", "stop","stop"]
+// },
+// {
+// currentState: "q13",
+// currentSymbols: ["B", "B","B"],
+// newState: "q13",
+// newSymbols: ["B", "B","B"],
+// moves: ["right", "stop","stop"]
+// },
+// {
+// currentState: "q13",
+// currentSymbols: ["1", "B","B"],
+// newState: "q14",
+// newSymbols: ["B", "B","B"],
+// moves: ["right", "stop","stop"]
+// },
+// {
+//   currentState: "q13",
+//   currentSymbols: ["0", "B","B"],
+//   newState: "q13",
+//   newSymbols: ["B", "B","B"],
+//   moves: ["right", "stop","stop"]
+//   },
+//   {
+//   currentState: "q13",
+//   currentSymbols: ["0", "B","+"],
+//   newState: "q13",
+//   newSymbols: ["B", "B","B"],
+//   moves: ["right", "stop","stop"]
+//   },
+//   {
+//   currentState: "q13",
+//   currentSymbols: ["0", "B","-"],
+//   newState: "q13",
+//   newSymbols: ["B", "B","B"],
+//   moves: ["right", "stop","stop"]
+//   },
+//   {
+//   currentState: "q13",
+//   currentSymbols: ["B", "B","-"],
+//   newState: "q13",
+//   newSymbols: ["B", "B","B"],
+//   moves: ["right", "stop","stop"]
+//   },
+//   {
+//   currentState: "q13",
+//   currentSymbols: ["B", "B","+"],
+//   newState: "q13",
+//   newSymbols: ["B", "B","B"],
+//   moves: ["right", "stop","stop"]
+//   },
+//   {
+//   currentState: "q13",
+//   currentSymbols: ["1", "B","B"],
+//   newState: "q14",
+//   newSymbols: ["B", "B","B"],
+//   moves: ["right", "stop","stop"]
+//   },
     ]
 };
 
