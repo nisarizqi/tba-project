@@ -62,13 +62,21 @@ const machine = {
             newSymbols: "Y",
             moves: "left"
         },
-        {
-            currentState: "q2",
-            currentSymbols: "X",
-            newState: "q4",
-            newSymbols: "X",
-            moves: "left"
-        },
+        // {
+        //     currentState: "q2",
+        //     currentSymbols: "X",
+        //     newState: "q4",
+        //     newSymbols: "X",
+        //     moves: "left"
+        // },
+        // INI TAMBAHANNYA
+            {
+                currentState: "q2",
+                currentSymbols: "X",
+                newState: "q14",
+                newSymbols: "X",
+                moves: "right"
+            },
         // STATE q3
         {
             currentState: "q3",
@@ -211,6 +219,46 @@ const machine = {
             newSymbols: "B",
             moves: "left"
         },
+        // INI TAMBAHANNYA
+            // STATE q13
+            {
+              currentState: "q13",
+              currentSymbols: "X",
+              newState: "q12",
+              newSymbols: "B",
+              moves: "left"
+            },
+            // STATE q14
+            {
+              currentState: "q14",
+              currentSymbols: "B",
+              newState: "q15",
+              newSymbols: "B",
+              moves: "left"
+            },
+            {
+              currentState: "q14",
+              currentSymbols: "Y",
+              newState: "q16",
+              newSymbols: "Y",
+              moves: "left"
+            },
+            // STATE q15
+            {
+              currentState: "q15",
+              currentSymbols: "X",
+              newState: "q12",
+              newSymbols: "B",
+              moves: "left"
+            },
+            // STATE q16
+            {
+              currentState: "q16",
+              currentSymbols: "X",
+              newState: "q4",
+              newSymbols: "X",
+              moves: "left"
+            },
     ]
 };
 
