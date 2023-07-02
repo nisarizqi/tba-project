@@ -37,6 +37,14 @@ const machine = {
             newSymbols: ["0", "0", "B"],
             moves: ["right", "right", "stop"]
           },
+          // INI TAMBAHANNYA
+            {
+              currentState: "q1",
+              currentSymbols: ["B", "B", "B"],
+              newState: "q7",
+              newSymbols: ["B", "B", "B"],
+              moves: ["stop", "stop", "stop"]
+            },
           // STATE q2
           {
             currentState: "q2",
