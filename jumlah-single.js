@@ -635,13 +635,14 @@ const machine = {
             newSymbols: "1",
             moves: "right"
         },
-        {
-            currentState: "q49",
-            currentSymbols: "B",
-            newState: "q54",
-            newSymbols: "B",
-            moves: "left"
-        },
+        // UPDATE #5
+            {
+                currentState: "q49",
+                currentSymbols: "B",
+                newState: "q49",
+                newSymbols: "B",
+                moves: "right"
+            },
         // STATE q50
         {
             currentState: "q50",
