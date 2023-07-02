@@ -703,6 +703,14 @@ const machine = {
             newSymbols: "B",
             moves: "right"
         },
+        // UPDATE
+            {
+                currentState: "q54",
+                currentSymbols: "0",
+                newState: "q49",
+                newSymbols: "B",
+                moves: "right"
+            },
         // STATE q55
         {
             currentState: "q55",
